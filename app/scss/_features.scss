@@ -1,0 +1,39 @@
+.feature{
+
+    
+    
+    &_grid{
+        background-color: $VeryLightGray;
+        @include breakpoint-up(medium){
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+    }
+
+    &_item {
+        
+        padding: 0.9375rem;
+        @include breakpoint-up(medium){
+            flex: 0 0 50%;
+        }
+        @include breakpoint-up(large){
+            flex: 1;
+        }
+    }
+
+    &_icon{
+
+    }
+
+    &_title{
+        font-weight:300;
+        color: $DarkBlue;
+        line-height: 1.15;
+        margin-bottom: 1.5rem; 
+    }
+
+    &_description{
+
+    }
+}

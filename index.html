@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Public+Sans:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/app/scss/style.css"> 
+  <title>Frontend Mentor | Easybank landing page</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  
+
+
+  <header class ="header"> 
+    <div class = "overlay has-fade"></div>
+    <nav class = "container flex flex-jc-sb flec-ai-c">
+      <a href = "/" class = "header_logo">
+        <img src ="images/IMG-0694.jpg" alt = "cookGenie">
+      </a>
+
+      <a id="btnHamburger" href = "#" class = "header_toggle hide-for-desktop">
+        <span></span>
+        <span></span>
+        <span></span>
+      </a>
+
+      <div class="header_links hide-for-mobile">
+        <a href="http://">Home</a>
+        <a href="http://">About</a>
+        <a href="http://">Contact</a>
+        <a href="http://">Blog</a>
+        <a href="http://">Careers</a>
+
+      </div>
+
+      <a href = "https://t.maze.co/152766427" class = "button header_cta hide-for-mobile">Try it Today!</a>
+    </nav>
+
+    <div class="header_menu has-fade">
+      <a href="http://">Home</a>
+      <a href="http://">About</a>
+      <a href="http://">Contact</a>
+      <a href="http://">Blog</a>
+      <a href="http://">Careers</a>
+    </div> 
+  </header>
+
+  <section class = "hero container ">
+    <div class = "hero_image"></div>
+    <div class="hero_text ">
+      <h1>
+        Cooking Made Easy
+      </h1>
+      <p>
+        Take the next step in your cooking journey. Your CookGenie subscription will be a 
+        portal to savings, healthier eating, and much more.
+
+      </p>
+      <a href = "https://t.maze.co/152766427" class = "button hero_cta">
+        Try it Today!</a>
+    </div>
+
+  </section>
+
+  <section class = "features container container--pall">
+    <h2>Why choose CookGenie?</h2>
+    <p>CookGenie has a litany of relevant features and functions that allow you to save 
+      and eat well without having to worry about the stress of planning </p>
+
+      <div class="feature_grid">
+        <div class="feature_item">
+          <div class="feature_icon"><img src = "/images/icon-budgeting.svg"></div>
+          <div class="feature_title">
+          Pricing 
+          </div>
+        <div class="feature_desc">
+          All our services can be accessed for as little as 10 dollars a month.
+           A two week free trial is also available for those who want to try it first!
+        </div>
+        </div>  
+
+        <div class="feature_item">
+          <div class="feature_icon"><img src = "/images/icon-api.svg"></div>
+          <div class="feature_title">
+          Personalized Meal Plans
+          </div>
+        <div class="feature_desc">
+          Cook Genie recommends meals based on the user's preferences, 
+          such as dietary restrictions, allergies, and taste preferences.
+        </div>
+        </div>  
+
+        <div class="feature_item">
+          <div class="feature_icon"><img src = "/images/icon-online.svg"></div>
+          <div class="feature_title">
+          PIT Vision
+          </div>
+        <div class="feature_desc">
+          Cook Genie's PIT vision is to make it easy for people to eat healthy meals. 
+          The company believes that everyone should have access to healthy food, 
+          regardless of their budget or lifestyle. Cook Genie is committed to 
+          providing its customers with the tools they need to make healthy eating 
+          a part of their everyday lives.
+        </div>
+        </div>  
+
+        <div class="feature_item">
+          <div class="feature_icon"><img src = "/images/icon-onboarding.svg"></div>
+          <div class="feature_title">
+          Our Call to Action
+          </div>
+        <div class="feature_desc">
+          The call to action for Cook Genie is to sign up for a free trial. 
+          This is a clear and compelling call to action because it allows 
+          users to try out the service before they commit to a subscription.
+        </div>
+        </div>  
+      </div>
+    </section>
+    <section class="articles">
+      
+      <div class="article_content container container--pall">
+
+        <h2>Latest Press Releases</h2>
+
+        <div class="article_grid">
+
+          <a href="#" class="article_item">
+            <div class="article_image" style = "background-image: url('/images/image-currency.jpg')"></div>
+            <div class="article_text">
+              <div class="article_author">By Shinju Zhang</div>
+              <div class="article_title"> CookGenie provides unique value to its users</div>
+              <div class="article_desc"> Cook Genie's unique value proposition is that it provides a personalized meal plan that is tailored to the individual's needs and preferences. 
+                This can save users time and money, as they will not have to spend 
+                time planning their meals or shopping for groceries. Cook Genie also offers a variety of 
+                meal plans to choose from, so users can find one that fits their lifestyle and dietary needs.</div>
+            </div>
+          </a>
+
+          <a href="#" class="article_item">
+            <div class="article_image" style = "background-image: url('/images/image-currency.jpg')"></div>
+            <div class="article_text">
+              <div class="article_author">By Ahmad Choreim</div>
+              <div class="article_title"> An unfair Advantage: CookGenies rise to the top </div>
+              <div class="article_desc"> Cook Genie's unfair advantage is its proprietary AI technology that allows it to generate personalized meal plans. 
+                This technology is not available from any other meal prep company.
+              </div>
+              
+            </div>
+          </a>
+          <a href="#" class="article_item">
+            <div class="article_image" style = "background-image: url('/images/image-currency.jpg')"></div>
+            <div class="article_text">
+              <div class="article_author">By Lily Rosenbaum</div>
+              <div class="article_title">  How we gather customer feedback</div>
+              <div class="article_desc"> Cook Genie gathers customer feedback through surveys. The surveys ask customers about their satisfaction with the service, 
+                as well as their suggestions for improvement. Cook Genie uses 
+                this feedback to improve the service and make it more user-friendly.</div>
+              
+            </div>
+          </a>
+          <a href="#" class="article_item">
+            <div class="article_image" style = "background-image: url('/images/image-currency.jpg')"></div>
+            <div class="article_text">
+              <div class="article_author">By Jared Starman</div>
+              <div class="article_title"> CookGenie Landing Page/MVP launched</div>
+              <div class="article_desc"> With the launch of our landing page and MVP, new users can begin to 
+                experiment and test our product
+              </div>
+              
+            </div>
+          </a>          
+        </div>
+      </div>
+
+    </section>
+  <footer class = "footer">
+
+
+
+    <a class="footer_logo" href="#">
+      <img src ="/images/IMG-0697 (1).jpg"/>      
+    </a>
+
+
+    <div class="footer_social">
+      <a href="#">
+        <img src="/images/icon-facebook.svg" alt = "Facebook">
+      </a>
+
+      <a href="#">
+        <img src="/images/icon-youtube.svg" alt = "Youtube">
+      </a>
+
+      <a href="#">
+        <img src="/images/icon-twitter.svg" alt = "Twitter">
+      </a>
+
+
+      <a href="#">
+        <img src="/images/icon-pinterest.svg" alt = "Pintrest">
+      </a>
+
+      <a href="#">
+        <img src="/images/icon-instagram.svg" alt = "Instagram">
+      </a>
+    </div>
+
+    <div class="footer_links col1">
+      <a href="#">About Us</a>
+      <a href="#">Contact</a>
+      <a href="#">Blog</a>
+    </div>
+
+    <div class="footer_links col2">
+      <a href="#">Careers</a>
+      <a href="#">Support</a>
+      <a href="#">Privacy Policy</a>
+    </div>
+
+    <div class="footer_cta">
+      <a href="https://t.maze.co/152766427" class="button">Try it Today!</a>
+      <div class="footer_copy">
+        &copy; CookGenie. All Rights Reserved
+      </div>
+    </div>
+  </footer>
+  
+
+  <script src = "app/js/script.js"></script>
+</body>
+</html>

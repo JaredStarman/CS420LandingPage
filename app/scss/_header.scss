@@ -1,0 +1,133 @@
+.header{
+    
+
+    &.open{
+
+        .header_toggle{
+            > span:first-child{
+                transform: rotate(45deg);
+            }
+
+            > span:nth-child(2){
+                opacity : 0;
+            }
+
+            > span:last-child{
+                transform: rotate(-45deg)
+            }
+        }
+    }
+
+    &_menu{
+        background : $White;
+        padding: 1.625rem;
+        border-radius: 5px;
+        position: absolute;
+        width: calc(100% - 3rem);
+        left : 50%;
+        transform: translateX(-50%);
+        margin-top: 1.5rem;
+        z-index: 1000;
+            a{
+            color: $DarkBlue;
+            padding: 0.625rem;
+            display: block;
+            text-align: center;
+        }
+
+    }
+
+    .overlay {
+        opacity:0;
+        position: absolute;
+        top : 0px;
+        right: 0px;
+        bottom: 0px;
+        left: 0px;
+        background-image: linear-gradient($PlumOver, transparent);
+        &.fade-in{
+            display: block;
+        }
+        &.fade-out{
+            display: none;
+        }
+    
+    }
+
+    
+    
+
+    nav{
+        position:relative;
+        background-color: $White;
+        padding-top : 1.0625rem ;
+        padding-bottom : 1.5rem;
+    }
+    &_logo{
+
+        img{
+            width: 13rem;
+            height: 3rem;
+        }
+    }
+
+    &_toggle{
+        > span {
+            display:block;
+            width: 26px;
+            height : 2px;
+            background-color: $DarkBlue;
+            transition: all 300ms ease-in-out;
+            transform-origin: 3px 1px ;
+            &:not(:last-child){
+                margin-bottom: 5px;
+            }
+        }
+        
+        
+    }
+
+
+
+
+    &_links{
+        margin-top: 0.8rem;
+
+
+        a {
+            position: relative;
+            font-size: $font-small;
+            color:$DarkBlue;
+            transition: color 200ms ease-in-out;
+            &:not(:last-child){
+                margin-right: 32px;
+            }
+
+            &::before{
+                content : " ";
+                display: block;
+                position: absolute;
+                height : 5px;
+                left: 0;
+                right: 0;
+                bottom : -30px;
+                background : linear-gradient(to right, $Plum, $Yellow);
+                opacity :0;
+                transition: opacity 200ms ease-in-out;
+            }
+            &:hover{
+                color: $DarkBlue;
+
+                &::before{
+                    opacity :1;
+                }
+            }
+        }
+    }
+
+
+}
+
+
+//hamburger opener
+

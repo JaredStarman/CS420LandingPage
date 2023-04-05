@@ -1,0 +1,58 @@
+.hero{
+
+    background-color: $VeryLightGray;
+    @include breakpoint-up(large){
+        display: flex;
+        
+        align-items: center;
+    }
+
+
+
+    &_image{
+        position:relative;
+        background-image: url("/images/bg-intro-mobile.svg");
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center center;
+        min-height : 17.5rem;
+
+        @include breakpoint-up(large){
+            flex: 3;
+            order : 2;
+            height:41rem;
+            background-image: url("/images/bg-intro-desktop.svg");
+            background-position: left center;
+        }
+
+        &::before{
+            content: "";
+            height: 100%; 
+            width: 100%;
+            position: absolute;
+            background-image: url("/images/LandingPageArt3.png");
+            background-size: 80%;
+            background-repeat: no-repeat;
+            background-position: center center;
+            min-height : 17.5rem;
+        }
+
+    }
+
+    &_text{
+        text-align: center;
+
+        @include breakpoint-up(large){
+            flex: 2;
+            order:1;
+            text-align: left;
+        }
+
+        p {
+            line-height: 1.5;
+            margin-bottom: 2.5rem;
+        }
+
+
+    }
+}

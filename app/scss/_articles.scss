@@ -36,7 +36,7 @@
     &_text{
         background-color: $White;
         padding: 1.875rem 1.875rem 2.5rem 1.875rem;
-        color:$GrayishBlue;
+        color:$TextGray;
 
         @include breakpoint-up(medium){
           padding: 1.875rem 1.575rem; 
@@ -56,6 +56,7 @@
 
     &_desc{
         font-size: 0.8125rem;
+        color: black;
     }
 
 

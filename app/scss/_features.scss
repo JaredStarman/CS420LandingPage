@@ -28,12 +28,12 @@
 
     &_title{
         font-weight:300;
-        color: $DarkBlue;
+        color: black;
         line-height: 1.15;
         margin-bottom: 1.5rem; 
     }
 
-    &_description{
-
+    &_desc{
+        color: black;
     }
 }
